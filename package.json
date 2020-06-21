@@ -1,0 +1,27 @@
+{
+  "name": "scss-float-grid",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "serve:scss": "live-server",
+    "compile:scss": "node-sass scss/main.scss css/style.css",
+    "debug:scss": "node-sass --watch scss/main.scss css/style.css",
+    "dev:scss": "run-p debug:scss serve:scss"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wisnudj/scss-float-grid.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/wisnudj/scss-float-grid/issues"
+  },
+  "homepage": "https://github.com/wisnudj/scss-float-grid#readme",
+  "devDependencies": {
+    "live-server": "^1.2.1",
+    "node-sass": "^4.14.1",
+    "npm-run-all": "^4.1.5"
+  }
+}
