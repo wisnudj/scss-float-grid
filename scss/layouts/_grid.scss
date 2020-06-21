@@ -1,6 +1,24 @@
 .row {
+  font-size: 1.8rem;
+  color: #fff;
+  text-align: center;
   max-width: $grid-width;
   background-color: $bg-color-white;
   margin: 0 auto;
-  margin-bottom: 80px;
+
+  &:not(:last-child) {
+    margin-bottom: $gutter-vertical;
+  }
+
+  @include clearfix;
+
+  .col-1-of-2 {
+    width: calc((100% - #{$gutter-horizontal}) / 2);
+    background-color: $elemen-color-orange;
+    float: left;
+
+    &:not(:last-child) {
+      margin-right: $gutter-horizontal;
+    }
+  }
 }
